@@ -77,7 +77,7 @@ export default function Index() {
       <Header />
       
       <main className="bg-white w-full">
-        <div className="items-stretch flex w-full gap-[40px_113px] flex-wrap py-8 px-[64px]">
+        <div className="items-stretch flex w-full gap-[40px_113px] flex-wrap py-8 px-[32px]">
           <aside className="bg-[#f5f8fa] rounded-md">
             <ProductGallery images={productImages} />
             <div className="flex w-full px-6 bg-[F5F8FA] bg-[#f5f8fa]">
