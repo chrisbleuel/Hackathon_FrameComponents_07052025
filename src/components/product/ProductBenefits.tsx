@@ -15,7 +15,7 @@ export const ProductBenefits: React.FC<ProductBenefitsProps> = ({
   benefits
 }) => {
   return <div className="content-start flex-wrap flex w-full gap-4 py-8 px-[32px]">
-      {benefits.map((benefit, index) => <Card key={index} className="max-w-[864px] items-center border border-[color:var(--Global-Border-subtle,#C2CDD6)] flex min-w-60 gap-4 grow shrink w-[298px] p-6 rounded-lg border-solid bg-[#f5f8fa]">
+      {benefits.map((benefit, index) => <Card key={index} className="max-w-[864px] items-center border border-[color:var(--Global-Border-subtle,#C2CDD6)] flex min-w-60 gap-4 grow shrink w-[298px] p-6 rounded-lg border-solid bg-[#f5f8fa]/0">
           <img src={benefit.icon} alt={benefit.title} className="aspect-[1] object-contain w-12 self-stretch shrink-0 my-auto" />
           <div className="self-stretch flex items-center gap-4 my-auto">
             <div className="self-stretch flex flex-col">
