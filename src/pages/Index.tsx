@@ -82,7 +82,7 @@ export default function Index() {
             <ProductGallery images={productImages} />
             <div className="flex w-full px-6 bg-[F5F8FA] bg-[#f5f8fa]">
               <div className="min-w-60 w-full flex-1 shrink basis-[0%]">
-                <div className="flex flex-col relative aspect-[4.07] min-h-[43px] w-[175px]">
+                <div className="flex flex-col relative aspect-[3.125] w-[175px]">
                   <img src="https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/0c0c460bb5d451440f1ba10fb2f7e7454137ace4?placeholderIfAbsent=true" alt="Brand logo" className="w-full h-full object-contain" />
                 </div>
                 <div className="text-[#32373E] text-base font-light tracking-[0.08px]">
@@ -92,8 +92,8 @@ export default function Index() {
             </div>
             
             <div className="w-full px-6 py-8 bg-[F5F8FA] bg-[#f5f8fa]">
-              <button className="justify-center items-center border border-[color:var(--Global-Border-interactive,#0072EF)] flex min-h-12 w-full gap-2 text-base text-[#0065D1] font-medium tracking-[0.32px] rounded-[3px] border-solid hover:bg-[#0072EF] hover:text-white transition-colors">
-                <img src="https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/68a2245874997bdbc2e6692d1e043fb00dc1d1ea?placeholderIfAbsent=true" alt="Try on" className="w-5 h-5" />
+              <button className="justify-center items-center border border-[color:var(--Global-Border-interactive,#0072EF)] flex min-h-10 w-full gap-2 text-sm text-[#0065D1] font-medium tracking-[0.32px] rounded-[3px] border-solid hover:bg-[#0072EF] hover:text-white transition-colors">
+                <img src="https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/68a2245874997bdbc2e6692d1e043fb00dc1d1ea?placeholderIfAbsent=true" alt="Try on" className="w-4 h-4" />
                 <span>Try on</span>
               </button>
               
