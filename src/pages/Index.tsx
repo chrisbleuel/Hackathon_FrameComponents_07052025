@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
@@ -257,7 +258,7 @@ export default function Index() {
           </section>
         </div>
 
-        <section className="px-4 pb-16">
+        <section className="px-16 pb-16">
           <ProductBenefits benefits={benefits} />
         </section>
       </main>

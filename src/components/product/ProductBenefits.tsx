@@ -1,4 +1,6 @@
+
 import React from 'react';
+import { Card } from '@/components/ui/card';
 
 interface Benefit {
   icon: string;
@@ -15,7 +17,7 @@ interface ProductBenefitsProps {
 
 export const ProductBenefits: React.FC<ProductBenefitsProps> = ({ benefits }) => {
   return (
-    <div className="content-start flex-wrap flex w-full gap-4">
+    <div className="content-start flex-wrap flex w-full gap-4 px-16">
       {benefits.map((benefit, index) => (
         <div
           key={index}
