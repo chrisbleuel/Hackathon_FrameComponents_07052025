@@ -24,7 +24,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
             </div>
             <div className="w-full mt-2 px-16">
               <div className="flex w-full items-stretch gap-[5px]">
-                {images.map((_, idx) => <button key={idx} onClick={() => setCurrentIndex(idx)} className={`flex ${idx === currentIndex ? 'w-[190px] bg-[#202327]' : 'w-[95px] bg-[#E6EBF0]'} shrink-0 h-1`} aria-label={`View image ${idx + 1}`} />)}
+                {images.map((_, idx) => <button key={idx} onClick={() => setCurrentIndex(idx)} className={`flex ${idx === currentIndex ? 'w-[95px] bg-[#202327]' : 'w-[190px] bg-[#E6EBF0]'} shrink-0 h-1`} aria-label={`View image ${idx + 1}`} />)}
               </div>
             </div>
           </div>
