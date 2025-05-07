@@ -5,6 +5,7 @@ import { ProductGallery } from '@/components/product/ProductGallery';
 import { ProductOptions } from '@/components/product/ProductOptions';
 import { ProductSpecs } from '@/components/product/ProductSpecs';
 import { ProductBenefits } from '@/components/product/ProductBenefits';
+
 const productImages = [{
   src: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/06914a8959f93f06997f705735e8b326e13a1555?placeholderIfAbsent=true',
   alt: 'Product front view'
@@ -12,6 +13,7 @@ const productImages = [{
   src: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/0c0c460bb5d451440f1ba10fb2f7e7454137ace4?placeholderIfAbsent=true',
   alt: 'Product side view'
 }];
+
 const colorOptions = [{
   id: 'black',
   name: 'Black',
@@ -29,12 +31,14 @@ const colorOptions = [{
   name: 'Blue',
   color: 'rgb(53,77,255)'
 }];
+
 const sizeOptions = [{
   id: 'small',
   label: 'S',
   dimensions: '50/17/145',
   unit: 'mm'
 }];
+
 const benefits = [{
   icon: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/eb59c892cc93eb1d94a1201717eb5b66fd312a41?placeholderIfAbsent=true',
   title: 'One-year warranty from our partners',
@@ -70,10 +74,13 @@ const benefits = [{
   icon: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/9e006b2c05c5b4157adee9eb5e1e4cee308882b2?placeholderIfAbsent=true',
   title: 'Premium frame brands.'
 }];
+
 export default function Index() {
   const [selectedColor, setSelectedColor] = useState(colorOptions[0].id);
   const [selectedSize, setSelectedSize] = useState(sizeOptions[0].id);
-  return <div className="bg-white">
+
+  return (
+    <div className="bg-white">
       <Header />
       
       <main className="bg-white w-full">
@@ -106,8 +113,8 @@ export default function Index() {
                     Sales tax not included
                   </div>
                 </div>
-                <div className="items-center self-stretch flex gap-2 text-base text-[#606A76] font-medium tracking-[0.08px] my-auto">
-                  <div className="bg-[#1E8565] self-stretch flex w-3 h-3 rounded-[50%]" />
+                <div className="flex flex-col items-start self-stretch gap-2 text-base text-[#606A76] font-medium tracking-[0.08px] my-auto">
+                  <div className="bg-[#1E8565] flex w-3 h-3 rounded-[50%] mt-10" />
                   <div className="text-[#606A76]">Ships in five days</div>
                 </div>
               </div>
@@ -116,7 +123,14 @@ export default function Index() {
 
           <section className="items-stretch flex min-w-60 flex-col flex-1 shrink basis-[0%] pt-8">
             <ProductSpecs />
-            <ProductOptions colors={colorOptions} sizes={sizeOptions} selectedColor={selectedColor} selectedSize={selectedSize} onColorChange={setSelectedColor} onSizeChange={setSelectedSize} />
+            <ProductOptions
+              colors={colorOptions}
+              sizes={sizeOptions}
+              selectedColor={selectedColor}
+              selectedSize={selectedSize}
+              onColorChange={setSelectedColor}
+              onSizeChange={setSelectedSize}
+            />
             
             <button className="justify-center items-center flex min-h-12 gap-2 text-base text-white font-medium tracking-[0.32px] bg-[#0072EF] rounded-[3px] mt-8 hover:bg-[#0065D1] transition-colors">
               <span>Select lenses</span>
@@ -131,5 +145,6 @@ export default function Index() {
       </main>
 
       <Footer />
-    </div>;
+    </div>
+  );
 }
