@@ -91,7 +91,7 @@ export default function Index() {
               </div>
             </div>
             
-            <div className="w-full px-6 py-8 bg-[F5F8FA] bg-transparent">
+            <div className="w-full bg-[F5F8FA] px-0 py-[32px] bg-[#000a00]/0">
               <button className="justify-center items-center border border-[color:var(--Global-Border-interactive,#0072EF)] flex min-h-12 w-full gap-2 text-base text-[#0065D1] font-medium tracking-[0.32px] rounded-[3px] border-solid hover:bg-[#0072EF] hover:text-white transition-colors">
                 <img src="https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/68a2245874997bdbc2e6692d1e043fb00dc1d1ea?placeholderIfAbsent=true" alt="Try on" className="w-5 h-5" />
                 <span>Try on</span>
