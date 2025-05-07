@@ -21,7 +21,7 @@ export const ProductBenefits: React.FC<ProductBenefitsProps> = ({ benefits }) =>
       {benefits.map((benefit, index) => (
         <Card
           key={index}
-          className="max-w-[864px] items-center border border-[color:var(--Global-Border-subtle,#C2CDD6)] flex min-w-60 gap-4 grow shrink w-[298px] p-6 rounded-lg border-solid"
+          className="max-w-[864px] items-center border border-[color:var(--Global-Border-subtle,#C2CDD6)] flex min-w-60 gap-4 grow shrink w-[298px] p-6 rounded-lg border-solid bg-[#f5f8fa]"
         >
           <img
             src={benefit.icon}
