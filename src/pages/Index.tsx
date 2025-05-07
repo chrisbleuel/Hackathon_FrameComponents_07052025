@@ -258,7 +258,7 @@ export default function Index() {
           </section>
         </div>
 
-        <section className="px-16 pb-16">
+        <section className="px-16 py-8">
           <ProductBenefits benefits={benefits} />
         </section>
       </main>

@@ -17,7 +17,7 @@ interface ProductBenefitsProps {
 
 export const ProductBenefits: React.FC<ProductBenefitsProps> = ({ benefits }) => {
   return (
-    <div className="content-start flex-wrap flex w-full gap-4 px-16">
+    <div className="content-start flex-wrap flex w-full gap-4 px-16 py-8">
       {benefits.map((benefit, index) => (
         <Card
           key={index}
