@@ -171,7 +171,7 @@ export default function Index() {
                     </div>
                     <div className="flex flex-col items-stretch w-[23px]">
                       <div className="flex min-h-1 w-full bg-[#3396FF]" />
-                      <div className="self-center mt-1">18 mm</div>
+                      <div className="self-center mt-1 my-0">18mm</div>
                     </div>
                   </div>
                 </div>
