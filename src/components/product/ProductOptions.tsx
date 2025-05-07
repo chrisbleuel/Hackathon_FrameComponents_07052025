@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 interface ColorOption {
@@ -81,7 +82,7 @@ export const ProductOptions: React.FC<ProductOptionsProps> = ({
                   </div>
                 </div>
                 <div className="flex w-full flex-col mt-2">
-                  <div className="text-[#32373E] text-base font-bold tracking-[0.08px]">
+                  <div className="text-[#32373E] text-[16px] font-bold tracking-[0.08px]">
                     {size.dimensions}
                   </div>
                   <div className="text-[#606A76] text-sm font-normal leading-none tracking-[0.07px]">
