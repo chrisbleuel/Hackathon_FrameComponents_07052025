@@ -19,7 +19,7 @@ export const ProductBenefits: React.FC<ProductBenefitsProps> = ({ benefits }) =>
   return (
     <div className="content-start flex-wrap flex w-full gap-4 px-16">
       {benefits.map((benefit, index) => (
-        <div
+        <Card
           key={index}
           className="max-w-[864px] items-center border border-[color:var(--Global-Border-subtle,#C2CDD6)] flex min-w-60 gap-4 grow shrink w-[298px] p-6 rounded-lg border-solid"
         >
@@ -50,7 +50,7 @@ export const ProductBenefits: React.FC<ProductBenefitsProps> = ({ benefits }) =>
               )}
             </div>
           </div>
-        </div>
+        </Card>
       ))}
     </div>
   );
