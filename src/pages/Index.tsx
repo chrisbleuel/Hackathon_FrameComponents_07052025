@@ -35,41 +35,43 @@ const sizeOptions = [{
   dimensions: '50/17/145',
   unit: 'mm'
 }];
-const benefits = [{
-  icon: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/eb59c892cc93eb1d94a1201717eb5b66fd312a41?placeholderIfAbsent=true',
-  title: 'One-year warranty from our partners',
-  link: {
-    text: 'Warranty details',
-    url: '#'
+const benefits = [
+  {
+    icon: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/eb59c892cc93eb1d94a1201717eb5b66fd312a41?placeholderIfAbsent=true',
+    title: 'One-year warranty from our partners',
+    link: {
+      text: 'Warranty details',
+      url: '#'
+    }
+  }, {
+    icon: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/32d256f23b9796108cc4ead14cf7f7e9ce3c9606?placeholderIfAbsent=true',
+    title: 'Free shipping',
+    link: {
+      text: 'More about shipping',
+      url: '#'
+    }
+  }, {
+    icon: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/b0b32028db87856f0e5ddf9556fed27a4dae274d?placeholderIfAbsent=true',
+    title: 'Free on-site services',
+    link: {
+      text: 'Explore local partners',
+      url: '#'
+    }
+  }, {
+    icon: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/d76ec412e4ab035517e137014000edccd733c587?placeholderIfAbsent=true',
+    title: 'Free returns',
+    link: {
+      text: 'See return policy',
+      url: '#'
+    }
+  }, {
+    icon: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/c31ec871f2e098fc0d421f886bb092919b7378d1?placeholderIfAbsent=true',
+    title: 'Free case and cleaning cloth'
+  }, {
+    icon: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/9e006b2c05c5b4157adee9eb5e1e4cee308882b2?placeholderIfAbsent=true',
+    title: 'Premium frame brands.'
   }
-}, {
-  icon: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/32d256f23b9796108cc4ead14cf7f7e9ce3c9606?placeholderIfAbsent=true',
-  title: 'Free shipping',
-  link: {
-    text: 'More about shipping',
-    url: '#'
-  }
-}, {
-  icon: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/b0b32028db87856f0e5ddf9556fed27a4dae274d?placeholderIfAbsent=true',
-  title: 'Free on-site services',
-  link: {
-    text: 'Explore local partners',
-    url: '#'
-  }
-}, {
-  icon: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/d76ec412e4ab035517e137014000edccd733c587?placeholderIfAbsent=true',
-  title: 'Free returns',
-  link: {
-    text: 'See return policy',
-    url: '#'
-  }
-}, {
-  icon: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/c31ec871f2e098fc0d421f886bb092919b7378d1?placeholderIfAbsent=true',
-  title: 'Free case and cleaning cloth'
-}, {
-  icon: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/9e006b2c05c5b4157adee9eb5e1e4cee308882b2?placeholderIfAbsent=true',
-  title: 'Premium frame brands.'
-}];
+];
 export default function Index() {
   const [selectedColor, setSelectedColor] = useState(colorOptions[0].id);
   const [selectedSize, setSelectedSize] = useState(sizeOptions[0].id);
@@ -124,7 +126,7 @@ export default function Index() {
             </h2>
             <div className="w-full text-base text-[#32373E] font-bold whitespace-nowrap text-center tracking-[0.08px] gap-4 mt-2">
               <div className="flex w-full gap-4 flex-wrap">
-                {colorOptions.map(color => <button key={color.id} onClick={() => setSelectedColor(color.id)} className={`max-w-[578px] items-stretch flex flex-col flex-1 shrink basis-[0%] gap-2 p-4 rounded-lg border ${selectedColor === color.id ? 'border-[#0072EF] border-2' : 'border-[#C2CDD6] border'}`}>
+                {colorOptions.map(color => <button key={color.id} onClick={() => setSelectedColor(color.id)} className={`w-[130px] items-stretch flex flex-col gap-2 p-4 rounded-lg border ${selectedColor === color.id ? 'border-[#0072EF] border-2' : 'border-[#C2CDD6] border'}`}>
                     <div className="self-center flex min-h-6 w-6 h-6 rounded-[19px]" style={{
                   backgroundColor: color.color
                 }} />
